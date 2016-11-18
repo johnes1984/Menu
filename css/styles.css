@@ -55,8 +55,9 @@ html, body {
 #menu_inicio{
 	background-color: black;
 	 opacity: 0.8;
-    height: 300px;
-    width: 37%;
+    height: 450px;
+    width: 480px;
+
 }
 
 #barra_tareas{
@@ -66,27 +67,56 @@ width: 100%;
 height:34px;
 }
 
-#menu_derecho{
-	
-	height: 200px;
-	position: relative;
+#menu_derecho
+{
+
+    width: 289px;
+    float: right;
+    height: 420px;
+    overflow-y:auto;  
+
 }
+
 #menu_izquierdo{
-	width: 150px;
-	height: 200px;
+	width: 180px;
+	height: 300px;
 	position: relative;
 	float: left;
+    color: white;
+
 }
 
 
 .anclados{
-    background-color: blue;
+background-color: blue;
     opacity: 1;
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 85px;
     float: left;
     margin: 3px;
 }
+
+.anclados .titulo{
+color: white;
+left:  2px;
+top: 10px;
+position:   relative;  
+width:  80px;
+height: 30px;  
+white-space:nowrap; 
+overflow:hidden; 
+text-overflow: ellipsis;
+}
+
+.anclados .icono{
+width: 40px;
+height: 40px;
+left:   20px;
+top: 15px;
+position:   relative;   
+}
+
+
 .usadas{
 
 	background-color: blue;
