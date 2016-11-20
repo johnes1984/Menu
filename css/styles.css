@@ -1,3 +1,24 @@
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+    border: 2px solid #555555;
+}
+
+
+
 html, body {
     font-family: Arial, sans-serif;
     background: #fff;
@@ -52,12 +73,33 @@ html, body {
     min-height: 1em;
 }
 
-#menu_inicio{
-	background-color: black;
-	 opacity: 0.8;
-    height: 450px;
-    width: 480px;
+#avatar{
+    width: 35px;
+    height: 35px;
+    margin: auto 0px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+        float: left;
+}
 
+#nickname{
+    top: 13px;
+    position: absolute;
+    left: 43px;
+    width: 140px;
+    height: 20px;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+#menu_inicio{
+    background-color: black;
+    opacity: 0.8;
+    height: 648px;
+    width: 655px;
+    bottom: 1px;
+    position: absolute;
 }
 
 #barra_tareas{
@@ -65,64 +107,117 @@ background-color: black;
 opacity: 1.9;
 width: 100%;
 height:34px;
+    bottom: 1px;
+    position: absolute;
 }
 
 #menu_derecho
 {
 
-    width: 289px;
+    width: 56%;
     float: right;
-    height: 420px;
-    overflow-y:auto;  
-
+    height: 89%;
+    overflow-y: auto;
 }
 
 #menu_izquierdo{
-	width: 180px;
-	height: 300px;
-	position: relative;
-	float: left;
+    width: 43%;
+    height: 69%;
+    position: relative;
+    float: left;
     color: white;
 
 }
 
 
 .anclados{
-background-color: blue;
+    background-color: blue;
     opacity: 1;
-    width: 85px;
-    height: 85px;
+    width: 112px;
+    height: 112px;
     float: left;
     margin: 3px;
+}
+.anclados:hover{
+opacity: 0.6;
+
+
 }
 
 .anclados .titulo{
 color: white;
-left:  2px;
-top: 10px;
-position:   relative;  
-width:  80px;
-height: 30px;  
-white-space:nowrap; 
-overflow:hidden; 
-text-overflow: ellipsis;
+    left: 7px;
+    top: 33px;
+    position: relative;
+    width: 92px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .anclados .icono{
-width: 40px;
-height: 40px;
-left:   20px;
-top: 15px;
-position:   relative;   
+    width: 40px;
+    height: 40px;
+    left: 38px;
+    top: 30px;
+    position: relative;   
 }
 
+div#mas_usadas {
+    width: 100%;
+    height: 271px;
+    overflow-y: auto;
+    padding-top: 13px;
+}
 
 .usadas{
 
-	background-color: blue;
     opacity: 1;
-    width: 100px;
-    height: 12px;
+    width: 95%;
+    height: 33px;
     float: left;
     margin: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+.usadas:hover{
+
+    
+        background-color: cornflowerblue;
+    opacity: 0.9;
+   
+}
+
+.opciones{
+    position: relative;
+    float: left;
+    bottom: 1px;
+    width: 181px;
+    height: 31px;
+}
+.opciones .titulo{
+  font-size: 13px;
+    text-align: left;
+    bottom: 17px;
+    float: left;
+    margin: 2px;
+}
+
+.opciones:hover {
+     background-color: cornflowerblue;
+    opacity: 0.9;
+
+}
+
+div#configuracion {
+  position: relative;
+    margin-top: 129px;
+    width: 100%;
+    height: 133px;
+
+}
+
+
+
+
