@@ -4,15 +4,23 @@
  <meta charset="utf-8">
 	<title>My Suit</title>
 
+<link rel="stylesheet" type="text/css" href="./menu_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./menu_files/bootstrap-cerulean.css">
+<link rel="stylesheet" type="text/css" href="./menu_files/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="./menu_files/datepicker.css">
+<link rel="stylesheet" type="text/css" href="./menu_files/datetimepicker.css">
+
+
+
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.3/angular-route.js"></script>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
 
-<body ng-app="prueba">
+<body ng-app="">
 
 
 
@@ -21,13 +29,27 @@
 
 <div id="rsi-card" class="card signin-card">
 	<img id="profile-img" class="profile-img" src="./imagenes/sinlogo.png" alt="">
-	<p class="profile-name">John Castiblanco</p>
-	<input id="next" name="signIn" class="rc-button rc-button-submit" type="submit" value="Siguiente">
+	<p class="profile-name">Usuario</p>
+	<p class="profile-name"><input class="pass" type="text" ng-model="prueba"></input></p>
+	<p class="profile-name"><button type="button" class="btn pass btn-primary">Iniciar Sesion</button></p>
+	
+	
 </div>
 
-<div id="rsi-card2" class="card signin-card"></div>
 
-<div id="menu_inicio"> 
+
+
+
+
+<h1>{{prueba}}</h1>
+
+
+
+
+
+
+
+<div id="menu_inicio" ng-class="myVar"> 
 
 	<div id="menu_izquierdo"> 
 
@@ -85,7 +107,12 @@
 
 
 <div id="barra_tareas">
-	
+	<div class="programa" ng-click="myVar='my-class'"><img class="iconoprograma" src="./imagenes/sinlogo.png"></div>
+	<div class="programa"><img class="iconoprograma" src="./imagenes/icono.png"></div>
+	<div class="programa"><img class="iconoprograma" src="./imagenes/icono.png"></div>
+	<div class="programa"><img class="iconoprograma" src="./imagenes/icono.png"></div>
+	<div class="programa"><img class="iconoprograma" src="./imagenes/icono.png"></div>
+	<div class="programa"><img class="iconoprograma" src="./imagenes/icono.png"></div>
 </div>
 
 </body>

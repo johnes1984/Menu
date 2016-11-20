@@ -37,6 +37,8 @@ html, body {
 
 .card {
     margin-bottom: 20px;
+    top: 25%;
+    position: relative;
 }
 .signin-card {
     width: 274px;
@@ -58,11 +60,12 @@ html, body {
 .signin-card .profile-img {
     width: 96px;
     height: 96px;
-    margin: 0 auto 10px;
+    /*margin: 0 auto 10px;*/
     display: block;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
+    float:  left;
 }
 
 .signin-card .profile-name {
@@ -71,6 +74,9 @@ html, body {
     text-align: center;
     margin: 10px 0 0;
     min-height: 1em;
+}
+.pass{
+    width: 58%;
 }
 
 #avatar{
@@ -103,10 +109,10 @@ html, body {
 }
 
 #barra_tareas{
-background-color: black;
-opacity: 1.9;
-width: 100%;
-height:34px;
+    background-color: black;
+    opacity: 1.9;
+    width: 100%;
+    height: 49px;
     bottom: 1px;
     position: absolute;
 }
@@ -137,6 +143,7 @@ height:34px;
     height: 112px;
     float: left;
     margin: 3px;
+    cursor: pointer;
 }
 .anclados:hover{
 opacity: 0.6;
@@ -145,14 +152,15 @@ opacity: 0.6;
 }
 
 .anclados .titulo{
-color: white;
+    color: white;
     left: 7px;
     top: 33px;
     position: relative;
     width: 92px;
-    height: 30px;
+    height: 37px;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 13px;
 }
 
 .anclados .icono{
@@ -180,6 +188,7 @@ div#mas_usadas {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    cursor: pointer;
 }
 .usadas:hover{
 
@@ -215,7 +224,29 @@ div#configuracion {
     margin-top: 129px;
     width: 100%;
     height: 133px;
+cursor: pointer;
+}
 
+.iconoprograma{
+        width: 43px;
+    height: 43px;
+    position: relative;
+    border: solid;
+    border-width: 2px;
+}
+
+.programa {
+    float: left;
+    margin: 1px;
+}
+.programa:hover {
+   background-color: cornflowerblue;
+    opacity: 0.9;
+    cursor: pointer;
+
+}
+.my-class {
+ display: none;
 }
 
 
