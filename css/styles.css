@@ -115,6 +115,7 @@ html, body {
     height: 49px;
     bottom: 1px;
     position: absolute;
+   
 }
 
 #menu_derecho
@@ -245,14 +246,24 @@ cursor: pointer;
     cursor: pointer;
 
 }
-.my-class {
+.Inicio_hide {
  
  display:none;
      opacity:0;
 
 }
 
-.my-classrun {
+.Inicio_show {
+    -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: show;
+    animation-duration: 0.5s;
+    position:relative;
+
+}
+
+
+.Entorno_show {
     -webkit-animation-name: show; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
     animation-name: show;
