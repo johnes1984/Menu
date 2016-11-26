@@ -1,16 +1,44 @@
-var menu = angular.module("MenuPrincipal", ["ngRoute"]);
+var menu = angular.module("MenuPrincipal", ["ngRoute","ui.router"]);
+
+
+menu.config(['$locationProvider', '$stateProvider', function ($locationProvider, $stateProvider) {
+        $stateProvider.state('Inventario', {
+            views: {
+                'areadetrabajo': {
+                 templateUrl: 'vistas/Inventario.html'
+                },
+                'barra_titulo': {
+                 templateUrl: 'vistas/Ventana.html'
+                }
+
+            }
+        });
+
+ 		$stateProvider.state('Entorno', {
+            url: 'vistas/Entorno.html',
+             views: {
+                'header': {
+                 templateUrl: './vistas/Sesion.html'
+                },
+                'content': {
+                 templateUrl: './vistas/Sesion.html'
+                }
+            }
+        });
 
 
 
+
+    }]);
 
 
 menu.config(function($routeProvider) {
+
+
+
     $routeProvider
     .when("/", {
         templateUrl : "vistas/Sesion.html"
-    })
-    .when("/Inventario", {
-        templateUrl : "vistas/Inventario.html"
     })
     .when("/Bienevenido", {
         templateUrl : "vistas/Entorno.html"
@@ -25,12 +53,13 @@ menu.controller("Login", function($scope,$location) {
 
 
 
+
+
+
+
 $scope.IniciarSesion = function(Usuario)
 {
-
-
-	 $location.path("/Inventario");
-
+	 $location.path("/Bienevenido");
 }
 
 
@@ -38,9 +67,20 @@ $scope.IniciarSesion = function(Usuario)
 
 
 
-menu.controller("EntornoController", function($scope) { 
+menu.controller("EntornoController", function($scope,$state) { 
 
-	$scope.Entornoactivo = 'Entorno_show';
+
+$scope.togo = function(direccion)
+{
+$state.go(direccion);
+}
+
+
+
+
+
+
+$scope.Entornoactivo = 'Entorno_show';
 $scope.botonInicio = true;
 
 $scope.Inicio = function()

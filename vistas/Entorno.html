@@ -1,6 +1,14 @@
+
+
+
+
+
+
 <div ng-controller="EntornoController">
 
 
+<div ui-view="barra_titulo"></div>
+<div ui-view="areadetrabajo"></div>
 
 		<div id="menu_inicio" ng-class="myVar"> 
 
@@ -13,8 +21,8 @@
 				</div>
 
 				<div id="mas_usadas">
-					<div class="usadas">Microsoft Office Word  2003</div>
-					<div class="usadas">Microsoft Office Word  2003</div>
+					<!-- <a ui-sref="Inventario"><div class="usadas">Inventario</div></a> -->
+					<div ng-click="togo('Inventario')" class="usadas">Inventario</div>
 					<div class="usadas">Microsoft Office Word  2003</div>
 					<div class="usadas">Microsoft Office Word  2003</div>
 					<div class="usadas">Microsoft Office Word  2003</div>
