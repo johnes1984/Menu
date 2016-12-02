@@ -1,4 +1,4 @@
-var menu = angular.module("MenuPrincipal", ["ngRoute","ui.router"]);
+var menu = angular.module("MenuPrincipal", ["ngRoute","ui.router","Inventarios"]);
 
 
 menu.config(['$locationProvider', '$stateProvider', function ($locationProvider, $stateProvider) {

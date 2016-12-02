@@ -1,0 +1,14 @@
+#area_inventario
+{
+	background-color: blue;
+}
+
+#menu_inventario
+{
+	width: 203px;
+    height: 644px;
+    position: relative;
+    float: left;
+    border: solid 1px;
+    overflow-y: overlay;
+}
