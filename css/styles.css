@@ -117,13 +117,46 @@ html, body {
     position: absolute;
    
 }
+.Ventana_trabajo{
+    position: relative;
+    border: solid 2px;
+    height: 679px;
+    border-radius: 10px;
+}
+.Reducir {
+    position: relative;
+    float: right;
+    height: 24px;
+    width: 27px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
+    border-radius: 43px;
+}
+.titulo_ventana
+{
+       color: white;
+    position: relative;
+    float: left;
+    padding: 3px
+
+}
+.Ventana_activa{
+    top: 32px;
+    position: relative;
+    
+}
 .barra_titulo{
-  background-color: black;
+     background-color: black;
     opacity: 0.9;
     width: 100%;
     height: 28px;
-    top: 1px;
+    top: 0px;
     position: absolute;
+    border: solid 2px;
+    border-radius: 7px;
    
 }
 
@@ -147,7 +180,7 @@ html, body {
 
 
 .anclados{
-    background-color: blue;
+    background-color: #157ACA;
     opacity: 1;
     width: 112px;
     height: 112px;
